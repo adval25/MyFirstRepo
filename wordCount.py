@@ -37,7 +37,7 @@ combined = []
 with open(inputFname, 'r') as inputFile:
     for line in inputFile:
         line = line.strip()
-        remove_chars = ['.', ',', ';', '!', '?', '-','--']
+        remove_chars = ['.', ',', ';', ':', '\'', '\"', '!', '?', '-','--']
         for char in remove_chars:
             line = str.replace(line, char, ' ')
         word = line.split()
